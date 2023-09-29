@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -maxdepth 1 -type f -name "*.html" -exec bash -c '[[ ! -e "../{}" || "{}" -nt "../{}" ]]' \; -exec bash -c 'if [ $? -eq 0 ]; then cp "{}" "../{}"; fi' \;	
+cp -rua *.html ../	
